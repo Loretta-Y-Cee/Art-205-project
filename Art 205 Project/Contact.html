@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="loretta.css">
+</head>
+<body>
+    <header>  
+        <nav>  
+            <ul>  
+                <li><a href="loretta.html">Home</a></li>  
+                <li><a href="About.html">About Me</a></li>  
+                <li><a href="Contact.html">Contact</a></li>  
+            </ul>  
+        </nav>  
+    </header>  
+    
+    <main class="grid">  
+        <section class="contact">  
+           <center><h1>Contact Me</h1> </center> 
+            <form id="contactForm">  
+                <input type="text" placeholder="Your Name" required> <br> <br> 
+                <input type="email" placeholder="Your Email" required> <br> <br>  
+                <textarea placeholder="Your Message" required></textarea> <br>  <br> 
+                <button type="submit">Submit</button>  <br><br>  
+            
+            </form>  
+        </section>  
+    </main>  
+
+    <footer>  
+        <p>&copy; 2024 My Portfolio</p>  
+    </footer>  
+
+    <div id="confirmModal" class="modal">  
+        <div class="modal-content">  
+            <p>Are you sure you want to submit this form?</p>  
+            <button id="confirmYes">Yes</button>  
+            <button id="confirmNo">No</button>  
+        </div>  
+    </div>  
+
+    <script src="script.js"></script>  
+
+</body>
+</html>

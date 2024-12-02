@@ -1,0 +1,137 @@
+* {  
+    box-sizing: border-box;  
+    margin: 0;  
+    padding: 0;  
+}  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f4;  
+    color: #333;  
+}  
+
+header {  
+    background: #333;  
+    color: #fff;  
+    padding: 10px 0;  
+}  
+
+nav ul {  
+    list-style: none;  
+    display: flex;  
+    justify-content: center;  
+}  
+
+nav ul li {  
+    margin: 0 15px;  
+}  
+
+nav a {  
+    color: white;  
+    text-decoration: none;  
+}  
+
+.grid {  
+    display: grid;  
+    grid-template-columns: repeat(1fr, minmax(300px, 1fr));  
+    gap: 20px;  
+    padding: 20px;  
+}  
+
+.intro {  
+    text-align: center;  
+    /* width: 300px; */
+}  
+
+.intro h1{
+    background: linear-gradient(to right, green,  yellow,blue, red);
+    background-clip: text;
+    color: transparent;
+    font-size: 3rem;
+}
+
+.projects, .skills, .about, .contact {  
+    background: #fff;  
+    padding: 20px;  
+    border-radius: 5px;  
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);  
+}  
+
+.project-item, .skill {  
+    background: #e2e2e2;  
+    margin: 10px 0;  
+    padding: 15px;  
+    border-radius: 5px;  
+    text-align: center;  
+}  
+
+footer {  
+    text-align: center;  
+    padding: 20px 0;  
+    background: #333;  
+    color: white;  
+}  
+
+.modal {  
+    display: none;   
+    position: fixed;   
+    z-index: 1;   
+    left: 0;   
+    top: 0;   
+    width: 100%;   
+    height: 100%;   
+    overflow: auto;   
+    background-color: rgba(0,0,0,0.4);   
+}  
+
+.modal-content {  
+    background-color: #fefefe;  
+    margin: 15% auto;   
+    padding: 20px;  
+    border: 1px solid #888;  
+    width: 80%;  
+}  
+
+#contactForm{
+    border: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient( to left, purple, blue, green, brown
+    );
+    text-align: center;
+    
+}
+
+#contactForm input{
+    padding: 10px;
+    margin-top: 50px;
+    border: 2px solid yellow;
+    border-radius: 4rem;
+    
+}
+
+#contactForm textarea{
+    padding: 10px;
+    margin-top: 70px;
+    border: 2px solid yellow;
+    height: 100px;
+}
+
+button {  
+    padding: 10px 15px;  
+    cursor: pointer;  
+}  
+
+@media (max-width: 600px) {  
+    nav ul {  
+        flex-direction: column;  
+    }  
+    
+    .grid {  
+        grid-template-columns: 1fr;  
+    }  
+
+    .modal-content {  
+        width: 90%;  
+    }  
